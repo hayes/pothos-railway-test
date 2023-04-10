@@ -22,5 +22,5 @@ const yoga = createYoga({
 const server = createServer(yoga);
 
 server.listen(process.env.PORT, () => {
-  console.log('Visit http://localhost:8000/graphql');
+  console.log(`Visit http://localhost:${process.env.PORT}/graphql`);
 });
